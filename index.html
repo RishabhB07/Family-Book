@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Family Book</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <h1>Family Book</h1>
+        <img id="member" src="Family-Book.jpg">
+        <p id="names">Family Book</p>
+        <button id="next" onclick="nextSlide()">Next</button>
+
+        <script>
+            var members=["Dipta Deep Banerjee", "Nandita Banerjee", "Jayashree Mukherjee", "Family Book"];
+var images=["Dad.jpg", "Mom.png", "Grandma.jpg", "Family-Book.jpg"];
+var i=0;
+function nextSlide() {
+    if(i == 4)
+     {
+       i=0;
+     }
+  document.getElementById("names").innerHTML=members[i];
+  document.getElementById("member").src=images[i];
+  i++;
+}
+        </script>
+    </body>
+</html>
